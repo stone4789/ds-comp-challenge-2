@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body, html {
   margin: 0;
   height: 100%;
@@ -5,5 +11,25 @@ body, html {
 }
 
 header {
-    
+    display: flex;
 }
+
+nav {
+  padding: 13%;
+}
+
+.logo, .admin {
+  margin-left: 40%;
+  margin-right: 60px;
+  text-align: right;
+}
+
+.admin {
+  margin-top: 15px;
+}
+
+.logo {
+  margin-left: 40%;
+}
+
+
