@@ -20,13 +20,38 @@ header {
   text-align: left;
   display: inline;
   list-style: none;
-  padding-top: 8%;
+  padding-top: 7%;
   padding-left: 1%;
+}
+
+#shares {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#shareList {
+  float: left;
+  width: 100%;
+
+}
+
+#shareList li {
+  border: 1px solid black;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  margin-top: 8em;
+  padding-bottom: 11%;
+  width: 15%;
 }
 
 li {
   float: left;
   list-style: none;
+}
+
+.top {
+  margin-top: 10%;
 }
 
 a {
@@ -47,4 +72,13 @@ li a {
 
 #admin {
   color: white; 
+}
+
+h1 {
+  font-size: 40px;
+  padding-bottom: 0;
+}
+
+p {
+    margin: 50%;
 }
