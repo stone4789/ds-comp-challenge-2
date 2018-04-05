@@ -11,25 +11,28 @@ body, html {
 }
 
 header {
-    display: flex;
+  display: flex;
+  flex-direction: column;
 }
 
-nav {
-  padding: 13%;
+.nav {
+  text-align: left;
+  display: inline;
+  list-style: none;
+  padding-top: 8%;
+  padding-left: 4%;
 }
 
-.logo, .admin {
-  margin-left: 40%;
-  margin-right: 60px;
-  text-align: right;
+li {
+    float: left;
+    list-style: none;
+    text-decoration: none;
 }
 
-.admin {
-  margin-top: 15px;
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
 }
-
-.logo {
-  margin-left: 40%;
-}
-
-
