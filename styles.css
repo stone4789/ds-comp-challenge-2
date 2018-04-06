@@ -33,7 +33,7 @@ header {
 #shareList {
   float: left;
   width: 100%;
-
+  margin-top: -90px;
 }
 
 #shareList li {
@@ -54,13 +54,10 @@ li {
   margin-top: 10%;
 }
 
-a {
-  text-decoration: none;
-}
-
 li a {
   display: block;
   color: rgb(239, 239, 239);
+  font-size: 24px;
   text-align: center;
   padding: 16px;
   text-decoration: none;
@@ -76,9 +73,19 @@ li a {
 
 h1 {
   font-size: 40px;
-  padding-bottom: 0;
+  padding-top: 40px;
+  color: rgb(239, 239, 239);
+}
+
+.cardImage {
+    border-radius: 50%;
 }
 
 p {
     margin: 50%;
+}
+
+.cage {
+    border-radius: 0;
+    max-width: 100%;
 }
