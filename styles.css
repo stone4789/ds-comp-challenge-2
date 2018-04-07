@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,6 +15,15 @@ header {
   background-color: rgb(47, 47, 47);
   display: flex;
   flex-direction: column;
+  padding: 5px;
+  position: relative;
+}
+
+div {
+  height: 400px;
+  width: 300px;
+  margin: 10px;
+  position: relative;
 }
 
 .nav {
@@ -31,9 +41,11 @@ header {
 }
 
 #shareList {
-  float: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
-  margin-top: -90px;
+  margin-top: -110px;
 }
 
 #shareList li {
@@ -43,15 +55,7 @@ header {
   margin-top: 8em;
   padding-bottom: 11%;
   width: 15%;
-}
-
-li {
-  float: left;
-  list-style: none;
-}
-
-.top {
-  margin-top: 10%;
+  height: 25%;
 }
 
 li a {
@@ -85,7 +89,61 @@ p {
     margin: 50%;
 }
 
-.cage {
+/*.cage {
     border-radius: 0;
     max-width: 100%;
+}*/
+
+.card-top {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Image Placement */
+
+.bunny {
+  background-image: url("images/bunny.jpg");
+  background-size: cover;
+}
+
+.bees {
+  background-image: url("images/bees.jpg");
+  background-size: cover;
+}
+
+.cat {
+  background-image: url("images/cat.jpg");
+  background-size: cover;
+}
+
+.conair {
+  background-image: url("images/conair.jpg");
+  background-size: cover;
+}
+
+.dexter {
+  background-image: url("images/dexter.jpg");
+  background-size: cover;
+}
+
+.monalisa {
+  background-image: url("images/monalisa.jpg");
+  background-size: cover;
+}
+
+.mulan {
+  background-image: url("images/mulan.jpg");
+  background-size: cover;
+
+}
+
+.thrones {
+  background-image: url("images/thrones.jpg");
+  background-size: cover;
+
 }
