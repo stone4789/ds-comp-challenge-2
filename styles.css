@@ -11,6 +11,13 @@ html {
   background-color: #EFEFEF;
 }
 
+main {
+  display: inline;
+  margin: 0;
+  padding: .5vw;
+}
+
+/* Header, Logo, and Login */
 #page-header {
   background-color: rgb(47, 47, 47);
   height: 13vw;
@@ -26,29 +33,28 @@ html {
   padding-left: 1%;
 }
 
-main {
-  margin: 0;
-  padding: .5vw;
-}
-
-#shares {
+#top8 {
+  color: rgb(61, 61, 61);
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  font-size: 30px;
+  margin-left: 4px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  vertical-align: 27%;
 }
 
 .films-icon,
 .estate-icon,
 .meme-icon,
 .admin-icon, 
-.down-arrow{
+.down-arrow {
   width: 2vw;
   float: right;
 }
 
 .header-right {
   float: right;
-
 }
 
 .header-left {
@@ -57,18 +63,54 @@ main {
     margin-right: 8vw;
 }
 
+#header-links {
+  position: absolute;
+  left: -1.75vw;
+  bottom: 15px;
+}
+
+#login, #login>p {
+  position: absolute;
+  right: 47px;
+  top: 16px;
+}
+
+.down-arrow,
+.admin-icon {
+  height: 20px;
+  width: 20px;
+  vertical-align: 27%;
+  margin-left: 4px;
+}
+
 .username {
-  float: right;
+  color: rgb(36, 139, 199);
+  display: inline;
+  font-size: 12px;
+  margin-left: 4px;
+  vertical-align: 50%;
+}
+
+#logo {
+  height: 8px;
+  width: 8px;
+  vertical-align: 27%;
+  margin-left: 4px;
 }
 
 article {
   background-position: center;
+  display: inline;
 }
 
 .cage {
   height: 10vw;
   filter: brightness(.7);
 }
+
+/* Card Positioning */
+
+
 /* Image Placement */
 
 #bunny {
