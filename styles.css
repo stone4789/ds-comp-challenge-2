@@ -1,19 +1,169 @@
 * {
   box-sizing: border-box;
-  font-family: 'Hind', sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: 'Exo 2', sans-serif;
+  line-height: 1.2;
 }
 
-html {
-  margin: 0;
-  height: 100%;
-  background-color: #EFEFEF;
+body {
+  background-color: beige;
 }
 
 main {
-  display: inline;
-  margin: 0;
-  padding: .5vw;
+  background-color: beige;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1280px;
 }
 
+div {
+  height: 400px;
+  margin: 10px;
+  position: relative;
+  width: 300px;
+}
+
+/*HEADER AND ICONS
+*/
+header {
+  background-color: black;
+  color: gray;
+  padding: 5px;
+  position: relative;
+}
+
+li {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  display: inline-block;
+  margin: 40px 0 10px 20px;
+  font-size: 1.2em;
+}
+
+figure {
+  display: flex;
+  align-items: center;
+}
+
+figcaption {
+  display: inline-block;
+}
+
+.admin-icon {
+  height: 15px;
+  margin: 5px;
+}
+
+.icons {
+  bottom: 10px;
+  display: inline-block;
+  height: 30px;
+  margin: 5px;
+}
+
+.logo {
+  bottom: 10px;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+}
+
+/*CARDS
+
+*/
+.card {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  top: 0;
+  transition: top ease 0.3s;
+  background-size: cover;
+}
+
+.inner-content p {
+  bottom: 0px;
+  color: gray;
+  font-size: 1.1em;
+  height: 60%;
+  margin: .1px;
+  opacity: 0;
+  padding: 10px;
+  position: absolute;
+}
+
+h2 {
+  display: block;
+  clear: both;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  align-items: center;
+  display: flex;
+  float: right;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 1.1em;
+  margin: 3px;
+}
+
+.genre {
+  font-size: 1.3em !important;
+  color: black !important;
+  opacity: 0;
+}
+
+.large-font {
+  align-self: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  height: 50px;
+  justify-content: center;
+  margin: 10px auto;
+  padding: 5px;
+  width: 280px;
+}
+
+.views {
+  bottom: 10px;
+  display: inline-block;
+  float: right;
+  font-size: 2.2em;
+  opacity: 0;
+  position: absolute;
+  right: 10px;
+}
+
+/*IMAGE PLACEMENT*/
+.one {
+  background-image: url('images/');
+}
+
+.two {
+  background-image: url('images/');
+}
+
+.three {
+  background-image: url('images/');
+}
+
+.four {
+  background-image: url('images/');
+}
+
+.five {
+  background-image: url('images/');
+}
+
+.six {
+  background-image: url('images/');
+}
+
+.seven {
+  background-image: url('images/');
+}
+
+.eight {
+  background-image: url('images/');
+}
