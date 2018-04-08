@@ -7,10 +7,13 @@
 body,
 main {
   background-color: rgb(234, 234, 234);
+  margin: 0;
+  height: 100%;
+
 }
 
 main {
-  background-color: beige;
+  background-color: rgb(234, 234, 234);
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -117,6 +120,7 @@ aside {
   background-size: cover;
   margin-right: 5px;
   background-color: rgb(255, 255, 255);
+  max-height: 25%;
 }
 
 .inner-content p {
@@ -179,39 +183,42 @@ h4 {
   float: right;
   font-size: 2.2em;
   opacity: 0;
-  position: absolute;
   right: 10px;
+}
+
+p {
+  color: white;
 }
 
 /*IMAGE PLACEMENT*/
 .one {
-  background-image: url('images/');
+  background-image: url('images/road-house.jpg');
 }
 
 .two {
-  background-image: url('images/');
+  background-image: url('images/battlefield-earth.jpg');
 }
 
 .three {
-  background-image: url('images/');
+  background-image: url('images/manos.jpg');
 }
 
 .four {
-  background-image: url('images/');
+  background-image: url('images/wicker-man.jpg');
 }
 
 .five {
-  background-image: url('images/');
+  background-image: url('images/twilight.jpg');
 }
 
 .six {
-  background-image: url('images/');
+  background-image: url('images/the-room.jpg');
 }
 
 .seven {
-  background-image: url('images/');
+  background-image: url('images/puma-man.jpg');
 }
 
 .eight {
-  background-image: url('images/');
+  background-image: url('images/time-chasers.jpg');
 }
