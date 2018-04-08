@@ -4,8 +4,9 @@
   line-height: 1.2;
 }
 
-body {
-  background-color: beige;
+body,
+main {
+  background-color: rgb(234, 234, 234);
 }
 
 main {
@@ -23,20 +24,37 @@ div {
   width: 300px;
 }
 
+.nav-bar {
+  margin-left: -10vh;
+}
+
+figure {
+  margin-right: 1vw;
+}
+
+figcaption {
+  color: rgb(134, 134, 134);
+}
+
+figcaption:hover {
+  color: rgb(214, 214, 214);
+}
 /*HEADER AND ICONS
 */
 header {
-  background-color: black;
-  color: gray;
-  padding: 5px;
   position: relative;
+  width: 100%;
+  height: 9em;
+  background-color: rgb(32, 32, 32);
+  border-bottom: 23px solid black;
+  border: 2px solid black;
 }
 
 li {
   font-family: 'Saira Semi Condensed', sans-serif;
   display: inline-block;
   margin: 40px 0 10px 20px;
-  font-size: 1.2em;
+  font-size: 0.9em;
 }
 
 figure {
@@ -56,25 +74,49 @@ figcaption {
 .icons {
   bottom: 10px;
   display: inline-block;
-  height: 30px;
+  height: 20px;
   margin: 5px;
 }
 
-.logo {
+.camera {
   bottom: 10px;
   display: inline-block;
   position: absolute;
   right: 10px;
+  height: 10vh;
 }
 
-/*CARDS
+.nav-bar li {
+  margin-left: 1vw;
+}
 
-*/
+.company-name {
+  color: white;
+  margin-top: 12vh;
+}
+/*ARROWS*/
+.down-arrow {
+  height: 2vh;
+}
+
+.icons {
+  float: left;
+  width: 20px;
+}
+
+aside {
+  float: right;
+  margin-top: 5vh;
+}
+
+/*CARDS*/
 .card {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
   top: 0;
   transition: top ease 0.3s;
   background-size: cover;
+  margin-right: 5px;
+  background-color: rgb(255, 255, 255);
 }
 
 .inner-content p {
@@ -88,6 +130,12 @@ figcaption {
   position: absolute;
 }
 
+.scroll {
+  background-color: white;
+  border-radius: 50%;
+  height: 4vh;
+}
+
 h2 {
   display: block;
   clear: both;
@@ -99,7 +147,7 @@ h3 {
 
 h4 {
   align-items: center;
-  display: flex;
+  color: rgb(38, 130, 196);
   float: right;
   font-family: 'Saira Semi Condensed', sans-serif;
   font-size: 1.1em;
