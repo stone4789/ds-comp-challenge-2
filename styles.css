@@ -47,6 +47,7 @@ table {
   border-spacing: 0;
 }
 /*END OF RESET*/
+
 p {
   color: black;
 }
@@ -62,13 +63,14 @@ main {
 main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   background-color: rgb(234, 234, 234);
   width: 100%;
   margin-top: 6vh;
 }
 
 .top-right {
-  margin-left: 42vh;
+  margin-left: 59%;
 }
 
 a {
@@ -78,10 +80,12 @@ a {
 
 article {
   background-color: rgb(255, 255, 255);
-  position: relative;
-  height: 100%;
-  margin: 15px;
   box-shadow: 0 0 10px black;
+  height: 100%;
+  margin-top: 5%;
+  margin: 15px;
+  max-width: 25vw;
+  position: relative;
 }
 
 .card-bottom {
@@ -99,10 +103,7 @@ article {
   text-align: right;
   padding: 10px;
   width: 100%;
-}
 
-.nav-bar {
-  margin-left: -10vh;
 }
 
 figure {
@@ -119,20 +120,27 @@ figcaption:hover {
 /*HEADER AND ICONS
 */
 header {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 7.5em;
   background-color: rgb(32, 32, 32);
   border-bottom: 23px solid black;
   border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 7.5em;
+  position: relative;
+  width: 100%;
+}
+
+.top-header {
+  display: flex;
 }
 
 li {
-  font-family: 'Saira Semi Condensed', sans-serif;
   display: inline-block;
-  margin: 40px 0 10px 20px;
+  font-family: 'Saira Semi Condensed', sans-serif;
   font-size: 0.9em;
+  margin: 40px 0 10px 20px;
+  margin-top: 3vh;
+
 }
 
 figure {
@@ -153,6 +161,12 @@ aside {
   flex-direction: row;
 }
 
+h4 {
+  color: white;
+  margin: -7px;
+  padding-left: 18vw;
+}
+
 /*.icons {
   bottom: 10px;
   display: inline-block;
@@ -160,12 +174,15 @@ aside {
   margin: 5px;
 }*/
 
+.nav-bar {
+  margin-top: 25px;
+  justify-content: flex-end;
+}
+
 .camera {
-  right: 10px;
+  float: right;
   height: 8vh;
   width: 7vw;
-  margin-top: 17px;
-  float: right;
 }
 
 .company-name {
