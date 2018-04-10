@@ -49,7 +49,7 @@ table {
 /*END OF RESET*/
 
 p {
-  color: black;
+  color: white;
 }
 
 body,
@@ -71,20 +71,16 @@ main {
 
 .top-right {
   margin-left: 59%;
-}
-
-a {
-  text-decoration: none;
-  color: white;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 article {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 0 10px black;
   height: 100%;
-  margin-top: 5%;
-  margin: 15px;
-  max-width: 25vw;
+  margin: 10px 0;
+  width: 25%;
   position: relative;
 }
 
@@ -103,7 +99,12 @@ article {
   text-align: right;
   padding: 10px;
   width: 100%;
+}
 
+.bottom8 {
+  color: rgb(59, 59, 59);
+  font-size: 2em;
+  margin-top: 40px;
 }
 
 figure {
@@ -124,7 +125,7 @@ header {
   border-bottom: 23px solid black;
   border: 2px solid black;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;z
   height: 7.5em;
   position: relative;
   width: 100%;
@@ -132,6 +133,11 @@ header {
 
 .top-header {
   display: flex;
+  justify-content: flex-end;
+}
+
+.flex-name {
+ display: flex;
 }
 
 li {
@@ -153,8 +159,9 @@ figcaption {
 }
 
 .admin-icon {
+  float: right;
   height: 15px;
-  margin: 5px;
+  margin-right: 5px;
 }
 
 aside {
@@ -164,36 +171,35 @@ aside {
 h4 {
   color: white;
   margin: -7px;
-  padding-left: 18vw;
+  padding-left: 90vw;
 }
 
-/*.icons {
-  bottom: 10px;
-  display: inline-block;
-  height: 20px;
-  margin: 5px;
-}*/
-
-.nav-bar {
-  margin-top: 25px;
+.name-logo {
+  color: white;
+  display: flex;
+  margin: 12px 15px 0px 0px;
   justify-content: flex-end;
 }
 
 .camera {
-  float: right;
+  display: inline-block;
   height: 8vh;
   width: 7vw;
 }
 
 .company-name {
   color: white;
-  margin-left: 28vw;
 }
 
+.nav-bar {
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-start;
+}
 /*ARROWS*/
 .down-arrow {
   height: 10px;
-  margin-right: 7px;
+  margin: 0px 7px 0px 5px;
 }
 
 .icons {
@@ -229,9 +235,10 @@ h3 {
 
 .views {
   color: white;
-  float: right;
-  margin-left: 60px;
+/*  float: right;
+*/  margin-left: 60px;
 }
+
 .fwd {
   border-radius: 50%;
   background-color: white;
@@ -239,6 +246,7 @@ h3 {
   left: 10px;
   width: 45px;
   margin-right: 19px;
+  float: left;
 
 }
 
@@ -316,4 +324,44 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100% 100%;
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 861) {
+.views {
+  color: white;
+  float: none;
+  margin-left: 60px;
+}
+}
+
+@media only screen and (min-width: 850) {
+  article {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 590) {
+  .views {
+    float: none;
+    color: white;
+    margin-left: 60px;
+}
+  main {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px black;
+    height: 100%;
+    margin: 10px 0;
+    width: 30%;
+    position: relative;
+    flex-direction: column;
+
+  }
+  article {
+    height: 100%;
+    width: 30%;
+    position: relative;
+    max-width: 100%;
+  }
 }
